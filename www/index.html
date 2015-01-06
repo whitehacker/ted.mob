@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+      <ion-nav-bar class="bar-dark">
+    </ion-nav-bar>
+    <ion-tabs class="tabs-positive tabs-icon-top">
+      <ion-tab title="Home" icon="ion-home" ui-sref="home">
+        <ion-nav-view name="home"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Login" icon="ion-person" ui-sref="login">
+        <ion-nav-view name="login"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Help" icon="ion-help" ui-sref="help">
+        <ion-nav-view name="help"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+
+    <script type="text/ng-template" id="home.html">
+      <ion-view title="Home">
+        <ion-content padding="true">
+          
+            <div class="list card">
+
+  <div class="item item-avatar">
+    <img src="logo.jpg">
+    <h2>Teacher Education Department</h2>
+    <p>Ministry of Education, Afghanistan</p>
+  </div>
+
+  <div class="item item-body">
+    <center><img src="logo.jpg"></center>
+    <p>
+TED’s main objective is to strengthen M&E practices and support development anchored in evidence, learning and accountability. As part of this mandate, Teachers Education Directorate has been promoting the use of technology, mainly on mobile phones and PDAs, for more real-time aggregation and effective utilization of M&E.
+    </p>
+    
+  </div>
+
+  <div class="item">
+    <center><p>&copy;2014 TEMIS Department, TED</p></center>
+  </div>
+
+</div>
+
+
+
+
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="login.html">
+      <ion-view title="Login">
+        <ion-content padding="true">
+        <h2>Login here!</h2>
+        <p>In order to access the survey forms, you must login first!</p>
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password">
+            </label>
+          </div>
+          <button class="button button-block button-balanced">
+  Login!
+</button>
+
+
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="help.html">
+      <ion-view title="Help">
+        <ion-content padding="true">
+           <h2>Using the app</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto hic officia quasi excepturi sequi deleniti maiores consectetur veritatis sint?</p>
+        </ion-content>
+      </ion-view>
+    </script>
+
+  </body>
+</html>
